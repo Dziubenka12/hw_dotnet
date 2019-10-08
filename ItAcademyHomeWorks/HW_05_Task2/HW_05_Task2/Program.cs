@@ -21,16 +21,14 @@ namespace HW_05_Task2
             Console.WriteLine("Введите позицию в массиве ");
             int pos = Convert.ToInt32(Console.ReadLine());
             pos = pos - 1;
-            for (int i = pos; i < arr.Length - 1; i++)
+            for (int i = pos; i < arr.Length - 1; i = i + 2)
             {
                 int mas = arr[i];
                 arr[i] = last;
                 last = arr[i + 1];
                 arr[i + 1] = mas;
-                
-                //mas = arr[i];
-                //Console.Write($"{arr[i]} ");
             }
+            arr[arr.Length - 1] = last;
             for (int i = 0; i < arr.Length; i++)
             {
                 Console.Write($"{arr[i]} ");
