@@ -5,4 +5,10 @@
     <TargetFramework>netcoreapp3.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Reference Include="AssemblyOne">
+      <HintPath>..\..\AssemblyOne\AssemblyOne\obj\Debug\netcoreapp3.0\AssemblyOne.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>

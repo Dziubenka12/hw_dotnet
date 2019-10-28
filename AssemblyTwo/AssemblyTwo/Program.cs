@@ -1,4 +1,5 @@
 ﻿using System;
+using AssemblyOne;
 
 namespace AssemblyTwo
 {
@@ -6,12 +7,8 @@ namespace AssemblyTwo
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            Motorcycle motorcycle = new Motorcycle();
-            motorcycle.vinNamberProtectedInternal = "12asd";
-            SportBike sportBike = new SportBike();
-            sportBike.vinNamberProtectedInternal = "sa";
-            Console.WriteLine(sportBike.vinNamber);
+            Test1 test1 = new Test1();
+            Console.WriteLine(test1.Moto1);  
         }
     }
 }
